@@ -27,7 +27,9 @@ const Home = () => {
           onChange={(e) => setText(e.target.value)}
           value={text}
         />
-        <Link to='/about'>About</Link>
+        <Link className='link' to='/about'>
+          About
+        </Link>
       </div>
       <div className='cryptoDisplay'>
         {filteredCoin.map((coin) => (
