@@ -13,6 +13,10 @@ const Home = () => {
     setListValue(response.data.coins);
   }, []);
 
+  const filteredCoin = listVaue.filter((coin) =>
+    coin.name.toLowerCase().includes(text.toLowerCase())
+  );
+
   return (
     <div>
       <div className='cryptoHeader'>
@@ -24,18 +28,9 @@ const Home = () => {
         />
       </div>
       <div className='cryptoDisplay'>
-        {/* {filteredCoins.map((coin) => {
-          return (
-            <Coin
-              name={coin.name}
-              icon={coin.icon}
-              price={coin.price}
-              symbol={coin.symbol}
-            />
-          );
-        })} */}
-        {listVaue.map((coin) => (
+        {filteredCoin.map((coin) => (
           <Coin
+            key={coin.id}
             name={coin.name}
             icon={coin.icon}
             price={coin.price}
