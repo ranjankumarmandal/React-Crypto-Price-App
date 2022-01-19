@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Coin from '../utils/Coin';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [listVaue, setListValue] = useState([]);
@@ -26,6 +27,7 @@ const Home = () => {
           onChange={(e) => setText(e.target.value)}
           value={text}
         />
+        <Link to='/about'>About</Link>
       </div>
       <div className='cryptoDisplay'>
         {filteredCoin.map((coin) => (

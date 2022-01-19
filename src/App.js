@@ -7,6 +7,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom/cjs/react-router-dom.min';
+import PageNotFound from './components/pages/PageNoteFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route component={PageNotFound} />
         </Switch>
       </Fragment>
     </Router>
