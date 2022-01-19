@@ -14,9 +14,29 @@ const Home = () => {
 
   return (
     <div>
-      {listVaue.map((coin) => (
-        <div>{coin.name}</div>
-      ))}
+      <div className='cryptoHeader'>
+        <input
+          type='text'
+          placeholder='Bitcoin...'
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+        />
+      </div>
+      <div className='cryptoDisplay'>
+        {/* {filteredCoins.map((coin) => {
+          return (
+            <Coin
+              name={coin.name}
+              icon={coin.icon}
+              price={coin.price}
+              symbol={coin.symbol}
+            />
+          );
+        })} */}
+        {listVaue.map((coin) => (
+          <div>{coin.name}</div>
+        ))}
+      </div>
     </div>
   );
 };
