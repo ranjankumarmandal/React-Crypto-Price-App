@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Coin from '../utils/Coin';
 
 const Home = () => {
   const [listVaue, setListValue] = useState([]);
@@ -34,7 +35,12 @@ const Home = () => {
           );
         })} */}
         {listVaue.map((coin) => (
-          <div>{coin.name}</div>
+          <Coin
+            name={coin.name}
+            icon={coin.icon}
+            price={coin.price}
+            symbol={coin.symbol}
+          />
         ))}
       </div>
     </div>
