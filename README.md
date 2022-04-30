@@ -1,6 +1,6 @@
 # About This App
 
-This is a frontend application has been made with power of React.js, which is using axios library for fetching API to handle the http response. Here you can search for different crypto prices and filter them by performing search feature. Technologies used - HTML5, CSS3, JavaScript, React.js [React Cors (Components, props, state, events, passing props), React Hooks (useState, useEffect) and Redux in real projects], JSON.
+This is a frontend application has been made with power of React.js, which is using axios library for fetching API to handle the http response. Here you can search for different crypto prices and filter them by performing search feature. Technologies used - HTML5, CSS3, JavaScript, React.js [React Cors (Components, props, state, events, passing props), React Hooks (useState, useEffect) and Redux in real projects], and JSON.
 
 Note - This is just a demo project. This can be used for educational purposes, can't be used for business purpose.
 
